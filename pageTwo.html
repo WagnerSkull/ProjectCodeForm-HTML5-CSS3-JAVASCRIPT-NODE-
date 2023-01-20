@@ -8,23 +8,126 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sofia+Sans+Condensed:ital,wght@0,100;0,400;0,800;1,200;1,500&display=swap" rel="stylesheet">
-    <title>Chegou a hora</title>
+    <title>CodeForm</title>
 </head>
 <body>
-    <Div>
-        
-    </Div>
+    <form>
+        <label for="name" > Nome:</label>
+        <input type="text" id="name" name="name" autofocus><br>
+      
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br>
+      
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age"><br>
 
+      <br>
+
+        <p>Qual opção melhor descreve sua função atual?</p>
+        <select id="currency-select">
+            <option value="" disabled selected>
+                Selecione uma opção
+            </option>
+            <option>
+              Estudante
+            </option>
+            <option>
+              Trabalho em tempo integral
+            </option>
+            <option>
+              Aluno em tempo integral
+            </option>
+            <option>
+                Prefiro Não Dizer
+              </option>
+              <option>
+                Outro
+              </option>
+          </select>
+
+<br>
+
+          <p>Você recomendaria a programação a um amigo?</p>
+	<input type="radio"  value="Concerteza">
+	<label for="concerteza">Concerteza</label>
+<br>
+	<input type="radio"  value="Talvez">
+	<label for="talvez">Talvez</label>
+<br>
+<input type="radio"  value="Não">
+	<label for="Não">Não</label>
+        <br>
+
+        <p>O que mais gosta na programação?</p>
+        <select id="currency-select">
+            <option value="" disabled selected>
+                Selecione uma opção
+            </option>
+            <option>
+              Desafios
+            </option>
+            <option>
+              Projetos
+            </option>
+            <option>
+              Comunidade
+            </option>
+          </select>
+    
+          <br>
+
+          <p>Qual tecnologia quer estar melhorando ? (Pode Marcar mais de uma)</p>
+          <input type="checkbox" id="HTML" name="language" value="HTML">
+  <label for="HTML">HTML</label>
+  <br>
+  <input type="checkbox" id="CSS" name="language" value="CSS">
+  <label for="CSS">CSS</label>
+  <br>
+  <input type="checkbox" id="JavaScript" name="language" value="JavaScript">
+  <label for="JavaScript">JavaScript</label>
+  <br>
+  <input type="checkbox" id="NODE" name="language" value="NODE">
+  <label for="NODE">NODE</label>
+  <br>
+  <input type="checkbox" id="React" name="language" value="React">
+  <label for="React">React</label>
+  <br>
+  <input type="checkbox" id="TypeScript" name="language" value="TypeScript">
+  <label for="TypeScript">TypeScript</label>
+  <br>
+  <input type="checkbox" id="Ruby" name="language" value="Ruby">
+  <label for="Ruby">Ruby</label>
+  <br>
+  <input type="checkbox" id="PHP" name="language" value="PHP">
+  <label for="PHP">PHP</label>
+  <br>
+    <p>Algum comentário ou sugestão?</p>
+<textarea id="coments" class="caixa-sugestao" name="comentario" placeholder="Digite seu comentário aqui...">
+    </textarea>
+<br>
+<input type="submit" value="Enviar">
+
+<p>Formulário de Pesquisa WagnerLemes
+    <br>
+    Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+      </form>
+      
 
 
 
 
 
     <footer>
-        <a href="mailto:wagnerskull@hotmail.com" target="_blank"> <img src="./img/footerEmail.png" alt="E-mail"> </a>
-        <a href="https://www.linkedin.com/in/wagner-lemes/" target="_blank"><img src="./img/footerLinkedin.png" alt="Linkedin"></a>
-        <a href="https://www.instagram.com/wagnerskull" target="_blank"><img src="./img/footerInstagram.png" alt="Instagram"></a>
-    <p>Desenvolvedor Web - Wagner Lemes</p>
+        <a href="mailto:wagnerskull@hotmail.com" target="_blank"> <img src="./img/footerEmail.png" alt="E-mail"></a>
+
+        <a href="https://github.com/WagnerSkull" target="_blank"> <img src="./img/footerGitHub.png" alt="GitHub"></a>
+
+        <a href="https://www.linkedin.com/in/wagner-lemes/" target="_blank"><img src="./img/footerLinkedin.png"
+                alt="Linkedin"></a>
+
+        <a href="https://www.instagram.com/wagnerskull" target="_blank"><img src="./img/footerInstagram.png"
+                alt="Instagram"></a>
+        <p>Desenvolvedor Web - Wagner Lemes</p>
     </footer>
 </body>
 </html>
