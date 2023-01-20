@@ -93,7 +93,7 @@ footer {
 }
 
 footer img {
-    width: 3%;
+    width: 2%;
     height: auto;
     display: inline-block;
 
@@ -107,4 +107,84 @@ footer p {
 }
 
 
-/*css page1, até o momento.*/
+/*Page2>>>.*/
+
+form{
+    background-color: rgba(0, 0, 0, 0.452);
+    position: relative;
+    padding: 20px;
+    border-radius: 40px;
+    color: white;
+    height: auto;
+    margin-top: 60px;
+    text-align: center;
+}
+
+input {
+    background: #FFFFFF;
+    border: 1px solid #777777;
+    border-radius: 4px;
+    height: 20px;
+    display: block;
+    width: 100%;
+    outline: none;
+    padding-left: 16px;
+    font-size: 18px;
+}
+
+select{
+    background: #FFFFFF;
+border: 1px solid #777777;
+border-radius: 4px;
+height: 30px;
+display: block;
+width: 100%;
+cursor: pointer;
+outline: none;
+padding-left: 16px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+textarea{
+    width: 100%;
+}
+
+.enviar {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    border: 4px solid aliceblue;
+    padding: 3px 25px;
+    border-radius: 16px;
+    margin-top: 200px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 29px aliceblue;
+
+    box-shadow: inset 0 0 32px aliceblue, 0 0 32px purple;
+    position: relative;
+}
+
+.enviar:hover {
+    background-color: rgb(248, 178, 248);
+}
+
+.enviar::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    left: 0;
+    top: 120%;
+}
+
+@media (max-width: 600px) {
+    form {
+      width: 90%; /* diminui a largura do formulário */
+      font-size: 14px; /* diminui o tamanho da fonte */
+    }
+    input, select, textarea {
+      width: 100%; /* faz com que os campos ocupem toda a largura da tela */
+    }
+  }
