@@ -17,6 +17,8 @@ body {
     flex-direction: column;
 }
 
+
+
 @keyframes colors {
     0% {
         background-position: 0% 50%;
@@ -118,7 +120,6 @@ form {
     height: auto;
     margin-top: 60px;
     text-align: center;
-    
 }
 
 input {
@@ -149,33 +150,3 @@ select {
 textarea {
     width: 100%;
 }
-
-@media (max-width: 1210px) and (max-height: 942px) {
-    form {
-      width: 80%; /* reduce form width */
-      margin: 0 auto; /* center form on screen */
-    }
-    .form-group {
-      width: 100%; /* make form group full width of form */
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .form-control {
-      width: 100%; /* make form controls full width of form */
-      margin-bottom: 10px; /* add margin to form controls */
-    }
-    .form-label {
-      width: 100%; /* make form labels full width of form */
-      text-align: left;
-      margin-bottom: 10px; /* add margin to form labels */
-    }
-    input, select, textarea {
-      width: 100%; /* make inputs full width of form */
-      font-size: 16px; /* reduce font size for smaller screens */
-    }
-    .form-submit {
-      width: 100%; /* make form submit button full width of form */
-      margin-top: 20px; /* add margin to form submit button */
-    }
-  }
-  

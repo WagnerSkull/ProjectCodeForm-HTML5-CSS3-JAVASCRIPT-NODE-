@@ -1,135 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sofia+Sans+Condensed:ital,wght@0,100;0,400;0,800;1,200;1,500&display=swap" rel="stylesheet">
-    <title>CodeForm</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sofia+Sans+Condensed:ital,wght@0,100;0,400;0,800;1,200;1,500&display=swap"
+    rel="stylesheet">
+  <title>CodeForm</title>
 </head>
+
 <body>
 
   <div id="forms">
     <form class="form">
-        <label for="name" > Nome:</label>
-        <input type="text" id="name" name="name" autofocus><br>
-      
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email"><br>
-      
-        <label for="age">Idade:</label>
-        <input type="number" id="age" name="age"><br>
+      <label for="name"> Nome:</label>
+      <input type="text" id="name" name="name" autofocus><br>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email"><br>
+
+      <label for="age">Idade:</label>
+      <input type="number" id="age" name="age"><br>
 
       <br>
 
-        <p>Qual opção melhor descreve sua função atual?</p>
-        <select id="currency-select">
-            <option value="" disabled selected>
-                Selecione uma opção
-            </option>
-            <option>
-              Estudante
-            </option>
-            <option>
-              Trabalho em tempo integral
-            </option>
-            <option>
-              Aluno em tempo integral
-            </option>
-            <option>
-                Prefiro Não Dizer
-              </option>
-              <option>
-                Outro
-              </option>
-          </select>
+      <p>Qual opção melhor descreve sua função atual?</p>
+      <select id="currency-select">
+        <option value="" disabled selected>
+          Selecione uma opção
+        </option>
+        <option>
+          Estudante
+        </option>
+        <option>
+          Trabalho em tempo integral
+        </option>
+        <option>
+          Aluno em tempo integral
+        </option>
+        <option>
+          Prefiro Não Dizer
+        </option>
+        <option>
+          Outro
+        </option>
+      </select>
 
-<br>
+      <br>
 
-          <p>Você recomendaria a programação a um amigo?</p>
-	<input type="radio"  value="Concerteza">
-	<label for="concerteza" >Concerteza</label>
-<br>
-	<input type="radio"  value="Talvez">
-	<label for="talvez" >Talvez</label>
-<br>
-<input type="radio"  value="Não">
-	<label for="Não" >Não</label>
-        <br>
+      <p>Você recomendaria a programação a um amigo?</p>
+      <input type="radio" value="Concerteza">
+      <label for="concerteza">Concerteza</label>
+      <br>
+      <input type="radio" value="Talvez">
+      <label for="talvez">Talvez</label>
+      <br>
+      <input type="radio" value="Não">
+      <label for="Não">Não</label>
+      <br>
 
-        <p>O que mais gosta na programação?</p>
-        <select id="currency-select">
-            <option value="" disabled selected>
-                Selecione uma opção
-            </option>
-            <option>
-              Desafios
-            </option>
-            <option>
-              Projetos
-            </option>
-            <option>
-              Comunidade
-            </option>
-          </select>
-    
-          <br>
+      <p>O que mais gosta na programação?</p>
+      <select id="currency-select">
+        <option value="" disabled selected>
+          Selecione uma opção
+        </option>
+        <option>
+          Desafios
+        </option>
+        <option>
+          Projetos
+        </option>
+        <option>
+          Comunidade
+        </option>
+      </select>
 
-          <p>Qual tecnologia quer estar melhorando ? (Pode Marcar mais de uma)</p>
-          <input type="checkbox" id="HTML" name="language" value="HTML">
-  <label for="HTML">HTML</label>
-  
-  <input type="checkbox" id="CSS" name="language" value="CSS" >
-  <label for="CSS">CSS</label>
-  
-  <input type="checkbox" id="JavaScript" name="language" value="JavaScript" >
-  <label for="JavaScript">JavaScript</label>
-  
-  <input type="checkbox" id="NODE" name="language" value="NODE" >
-  <label for="NODE">NODE</label>
- 
-  <input type="checkbox" id="React" name="language" value="React" >
-  <label for="React">React</label>
-  <br>
-  <input type="checkbox" id="TypeScript" name="language" value="TypeScript" >
-  <label for="TypeScript">TypeScript</label>
+      <br>
 
-  <input type="checkbox" id="Ruby" name="language" value="Ruby" >
-  <label for="Ruby">Ruby</label>
-  
-  <input type="checkbox" id="PHP" name="language" value="PHP" >
-  <label for="PHP">PHP</label>
-  
-    <p>Algum comentário ou sugestão?</p>
-<textarea id="coments" class="caixa-sugestao" name="comentario" placeholder="Digite seu comentário aqui...">
+      <div class="inputs-checkbox">
+        <p>Qual tecnologia quer estar melhorando ? (Pode Marcar mais de uma)</p>
+        <input type="checkbox" id="HTML" name="language" value="HTML" class="input-check">
+        <label class="checkbox-label" for="HTML">HTML</label>
+
+        <input type="checkbox" id="CSS" name="language" value="CSS" class="input-check">
+        <label class="checkbox-label" for="CSS">CSS</label>
+
+        <input type="checkbox" id="JavaScript" name="language" value="JavaScript" class="input-check">
+        <label class="checkbox-label" for="JavaScript">JavaScript</label>
+
+        <input type="checkbox" id="NODE" name="language" value="NODE" class="input-check">
+        <label class="checkbox-label" for="NODE">NODE</label>
+
+        <input type="checkbox" id="React" name="language" value="React" class="input-check">
+        <label class="checkbox-label" for="React">React</label>
+
+        <input type="checkbox" id="TypeScript" name="language" value="TypeScript" class="input-check">
+        <label class="checkbox-label" for="TypeScript">TypeScript</label>
+
+        <input type="checkbox" id="Ruby" name="language" value="Ruby" class="input-check">
+        <label class="checkbox-label" for="Ruby">Ruby</label>
+
+        <input type="checkbox" id="PHP" name="language" value="PHP" class="input-check">
+        <label class="checkbox-label" for="PHP">PHP</label>
+      </div>
+
+
+      <p>Algum comentário ou sugestão?</p>
+      <textarea id="coments" class="caixa-sugestao" name="comentario" placeholder="Digite seu comentário aqui...">
     </textarea>
-<br>
-<input type="submit" value="Enviar" id="enviar">
+      <br>
+      <input type="submit" value="Enviar" id="enviar">
 
-<p>Formulário de Pesquisa WagnerSkull
-    <br>
-    Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
-      </form>
-    </div>
-
-
-
+      <p>Formulário de Pesquisa WagnerSkull
+        <br>
+        Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma
+      </p>
+    </form>
+  </div>
 
 
-    <footer>
-        <a href="mailto:wagnerskull@hotmail.com" target="_blank"> <img src="./img/footerEmail.png" alt="E-mail"></a>
 
-        <a href="https://github.com/WagnerSkull" target="_blank"> <img src="./img/footerGitHub.png" alt="GitHub"></a>
 
-        <a href="https://www.linkedin.com/in/wagner-lemes/" target="_blank"><img src="./img/footerLinkedin.png"
-                alt="Linkedin"></a>
 
-        <a href="https://www.instagram.com/wagnerskull" target="_blank"><img src="./img/footerInstagram.png"
-                alt="Instagram"></a>
-        <p>Desenvolvedor Web - Wagner Lemes</p>
-    </footer>
+  <footer>
+    <a href="mailto:wagnerskull@hotmail.com" target="_blank"> <img src="./img/footerEmail.png" alt="E-mail"></a>
+
+    <a href="https://github.com/WagnerSkull" target="_blank"> <img src="./img/footerGitHub.png" alt="GitHub"></a>
+
+    <a href="https://www.linkedin.com/in/wagner-lemes/" target="_blank"><img src="./img/footerLinkedin.png"
+        alt="Linkedin"></a>
+
+    <a href="https://www.instagram.com/wagnerskull" target="_blank"><img src="./img/footerInstagram.png"
+        alt="Instagram"></a>
+    <p>Desenvolvedor Web - Wagner Lemes</p>
+  </footer>
+
+  <script src="./scripts.js"></script>
 </body>
+
 </html>
